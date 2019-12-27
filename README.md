@@ -1,4 +1,4 @@
-# Habits
+<h1 align="center">Welcome to Habits 👋</h1>
 
 ![Licencia MIT](https://img.shields.io/badge/Licencia-MIT-green)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b3e704c3f150404582cd23b9fcb4be32)](https://www.codacy.com/manual/atareao/habits?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=atareao/habits&amp;utm_campaign=Badge_Grade)
@@ -11,6 +11,7 @@ mouse or how many keystrokes.
 
 [![Habits](./data/icons/habits.svg)](https://www.atareao.es/aplicacion/habits/)
 
+## 🏠 [Homepage](https://www.atareao.es/applicacion/habits)
 
 ## Prerequisites
 
