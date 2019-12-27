@@ -1,8 +1,9 @@
-habits (0.1.1-0extras19.10.0) eoan; urgency=medium
+habits (0.1.1-0extras19.10.2) eoan; urgency=medium
 
   * Add translation to Spanish
+  * Change directory
 
- -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Fri, 27 Dec 2019 09:58:20 +0100
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Fri, 27 Dec 2019 20:09:24 +0100
 
 habits (0.1.0-0extras19.10.11) eoan; urgency=medium
 

@@ -51,6 +51,7 @@ if is_package():
     APPDIR = os.path.join(ROOTDIR, APP)
     CHANGELOG = os.path.join(APPDIR, 'changelog')
     ICONDIR = os.path.join(ROOTDIR, 'icons')
+    HTML_GRAPH = os.path.join(APPDIR, 'graph', 'graph.html')
     AUTOSTARTDIR = os.path.join(ROOTDIR, 'autostart')
 else:
     ROOTDIR = os.path.abspath(os.path.dirname(__file__))
