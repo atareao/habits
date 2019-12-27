@@ -1,0 +1,94 @@
+# Language * translations for habits package.
+# Copyright (C) 2019 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the habits package.
+# Lorenzo <lorenzo.carbonell.cerezo@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: habits - 0.1.0-0extras19.10.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-27 09:57+0100\n"
+"PO-Revision-Date: 2019-12-27 09:54+0100\n"
+"Last-Translator: Lorenzo <lorenzo.carbonell.cerezo@gmail.com>\n"
+"Language-Team: Language *\n"
+"Language: *\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/preferences.py:43 src/indicator.py:104
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: src/preferences.py:49
+msgid "Theme light:"
+msgstr "Tema claro:"
+
+#: src/preferences.py:52
+msgid "Start actived:"
+msgstr "Inicia activado:"
+
+#: src/preferences.py:55
+msgid "Autostart:"
+msgstr "Autoinicio:"
+
+#: src/indicator.py:91 src/indicator.py:272
+msgid "Start monitor"
+msgstr "Comienza a monitorizar"
+
+#: src/indicator.py:98
+msgid "Statistics"
+msgstr "Estadísticas"
+
+#: src/indicator.py:108
+msgid "Help"
+msgstr "Ayuda"
+
+#: src/indicator.py:114
+msgid "Quit"
+msgstr "Salir"
+
+#: src/indicator.py:133 src/indicator.py:223
+msgid "Habits"
+msgstr "Hábitos"
+
+#: src/indicator.py:134
+msgid "Mouse and keyboard"
+msgstr "Ratón y teclado"
+
+#: src/indicator.py:163
+msgid "Homepage"
+msgstr "Sitio web"
+
+#: src/indicator.py:169
+msgid "Get help online..."
+msgstr "Consigue ayuda en línea..."
+
+#: src/indicator.py:176
+msgid "Translate this application..."
+msgstr "Traduce esta aplicación..."
+
+#: src/indicator.py:182
+msgid "Report a bug..."
+msgstr "Informa de un error..."
+
+#: src/indicator.py:191
+msgid "Found me in Twitter"
+msgstr "Encuéntrame en Twitter"
+
+#: src/indicator.py:197
+#, fuzzy
+msgid "Found me in GitHub"
+msgstr "Encuéntrame en GitHub"
+
+#: src/indicator.py:203
+msgid "Found me in Mastodon"
+msgstr "Encuéntrame en Mastodon"
+
+#: src/indicator.py:209
+msgid "About"
+msgstr "Acerca de..."
+
+#: src/indicator.py:281
+msgid "Stop monitor"
+msgstr "Comienza a monitorizar"

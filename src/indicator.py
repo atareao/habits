@@ -194,7 +194,7 @@ class Indicator(object):
             lambda x: webbrowser.open('https://twitter.com/atareao'))
         help_menu.append(twitter_item)
         #
-        github_item = Gtk.MenuItem.new_with_label(_('Found me in GiHub'))
+        github_item = Gtk.MenuItem.new_with_label(_('Found me in GitHub'))
         github_item.connect(
             'activate',
             lambda x: webbrowser.open('https://github.com/atareao'))
