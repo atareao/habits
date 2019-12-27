@@ -1,0 +1,9 @@
+
+bin /opt/extras.ubuntu.com/habits
+debian/changelog /opt/extras.ubuntu.com/habits/share/habits
+src/*.py /opt/extras.ubuntu.com/habits/share/habits
+src/graph /opt/extras.ubuntu.com/habits/share/habits
+data/icons/*.svg /opt/extras.ubuntu.com/habits/share/habits/icons
+data/habits.desktop /usr/share/applications
+data/autostart /opt/extras.ubuntu.com/habits/share
+data/images/habits.svg /usr/share/icons/hicolor/scalable/apps

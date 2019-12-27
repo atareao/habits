@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=/opt/extras.ubuntu.com/habits/bin/habits
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[es_ES]=habits-autostart
+Name=habits-autostart
+Comment[es_ES]=habits official shortcut
+Comment=habits official shortcut
+X-GNOME-Autostart-Delay=15

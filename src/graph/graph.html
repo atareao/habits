@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>My-Weather-Indicator (Evolution)</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript">
+			function draw_graph(atitle, asubtitle, days, distance, clics, keys){
+				jQuery('#container').highcharts({
+					chart: {
+						type: 'column'
+					},
+					title: {
+						text: atitle
+					},
+					subtitle: {
+						text: asubtitle
+					},					
+					xAxis: {
+						categories: days,
+						labels: {
+							align: 'right',
+							rotation: -30
+						}
+					},
+					yAxis: [
+						{ // 1 yAxis
+							title: {
+								text: 'Distance (m)',
+								style: {
+									color: '#AA4643'
+								}
+							},
+						},
+						{ // 2 yAxis
+							title: {
+								text: 'Clics (ud)',
+								style: {
+									color: '#4572A7'
+								}
+							},
+							max: 100,
+							maxPadding: 0,
+							opposite: true
+						},
+						{ // 3 yAxis
+							title: {
+								text: 'Keys (ud)',
+								style: {
+									color: '#606060'
+								}
+							},
+							opposite: true
+						}				
+						
+					],
+					tooltip: {
+						xDateFormat: '%H:%M - %e of %b',
+						shared: true
+					},					
+					series: [{
+						name: 'Distance',
+						color: '#AA4643',
+						data: distance,
+						marker: {
+							radius: 4
+						},
+						tooltip: {
+							valueSuffix: ' m'
+						}
+					},{
+						name: 'Clics',
+						color: '#4572A7',
+						yAxis: 1,
+						data: clics,
+						marker: {
+							radius: 4
+						},
+						tooltip: {
+							valueSuffix: ' ud'
+						}
+
+					},{
+						name: 'Keys',
+						color: '#606060',
+						yAxis: 2,
+						data: keys,
+						marker: {
+							radius: 4
+						},
+						tooltip: {
+							valueSuffix: ' ud'
+						}
+					}
+					]
+				});
+			};
+			function send(msg) {
+				document.title = "null";
+				document.title = msg;
+			}			
+		</script>
+	</head>
+	<body>
+		<script src="highcharts.js"></script>
+		<script src="exporting.js"></script>
+		<div id="container" style="min-width: 850px; min-height: 550px;"></div>
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				<!--
+				atitle='title';
+				asubtitle='subtitle';
+				days = ['2019-12-26', '2019-12-27', '2019-12-28']
+				distance=[10, 11, 12];
+				clics=[30, 35, 40];
+				keys=[120, 150, 140];
+				draw_graph(atitle,asubtitle,days,distance,clics,keys);
+				//-->
+				send('{"status":"ready"}');
+			});
+		</script>
+	</body>
+</html>

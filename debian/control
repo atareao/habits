@@ -1,0 +1,20 @@
+Source: habits
+Section: utils
+Priority: extra
+Maintainer: Lorenzo Carbonell Cerezo <lorenzo.carbonell.cerezo@gmail.com>
+Build-Depends: debhelper (>= 9), python, python-distutils-extra, python-polib, python-configparser
+Standards-Version: 3.9.5
+Homepage: http://www.atareao.es
+
+Package: habits
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends},
+    gir1.2-gtk-3.0,
+    gir1.2-glib-2.0,
+    gir1.2-gdkpixbuf-2.0,
+    gir1.2-appindicator3-0.1,
+    gir1.2-webkit2-4.0,
+    python3-xlib
+Description: Know your habits in yoir PC
+ Habits is an application to monitor your habits with your PC. So you can study
+ how many kilometers travel with your mouse or how many keystrokes.

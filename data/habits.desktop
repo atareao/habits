@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name = Habits
+GenericName = Habits
+Comment = Habits
+Exec = /opt/extras.ubuntu.com/habits/bin/habits
+Icon = habits
+Type = Application
+Terminal = false
+StartupNotify = true
+Encoding = utf-8
+Categories = Utility;
+Name[en_GB] = habits
+Name[es] = Hábitos
+GenericName[en_GB] = habits
+GenericName[es] = Hábitos
+Comment[en_GB] = Know your habits with your PC
+Comment[es] = Conoce tus hábitos con el ordenador
