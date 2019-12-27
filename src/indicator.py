@@ -124,12 +124,16 @@ class Indicator(object):
         if response == Gtk.ResponseType.ACCEPT:
             preferences.save()
             self.load_preferences()
-            self.set_icon(not self.is_monitoring)
+            self.set_icon(self.is_monitoring)
         preferences.destroy()
         widget.set_sensitive(True)
 
     def show_statistics(self, widget):
         widget.set_sensitive(False)
+
+        if self.is_monitoring and self.monitor is not None:
+            self.monitor.save()
+
         title = _('Habits')
         subtitle = _('Mouse and keyboard')
         configuration = Configuration()
@@ -267,7 +271,7 @@ SOFTWARE.''')
 
     def stop(self):
         self.set_icon(False)
-        self.is_monitoring = True
+        self.is_monitoring = False
 
         self.menu_toggle_service.set_label(_('Start monitor'))
         self.monitor.stop()
@@ -276,7 +280,7 @@ SOFTWARE.''')
 
     def start(self):
         self.set_icon(True)
-        self.is_monitoring = False
+        self.is_monitoring = True
 
         self.menu_toggle_service.set_label(_('Stop monitor'))
         self.monitor = Monitor()

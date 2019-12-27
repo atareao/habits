@@ -59,7 +59,6 @@ class Graph(BaseDialog):
         self.viewer = WebKit2.WebView()
         self.scrolledwindow1.add(self.viewer)
         self.scrolledwindow1.set_size_request(900, 600)
-        print(config.HTML_GRAPH)
         self.viewer.load_uri('file://' + config.HTML_GRAPH)
         self.viewer.connect('load-changed', self.load_changed)
         self.set_focus(self.viewer)

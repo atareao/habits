@@ -91,4 +91,4 @@ msgstr "Acerca de..."
 
 #: src/indicator.py:281
 msgid "Stop monitor"
-msgstr "Comienza a monitorizar"
+msgstr "Finaliza la monitorización"
