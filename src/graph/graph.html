@@ -5,9 +5,20 @@
 		<title>My-Weather-Indicator (Evolution)</title>
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript">
-			let graph;
+			var chart;
+			function set_colors(distance_color, clics_color, keys_color){
+				chart.update({
+					series:[{color: distance_color},
+							{color: clics_color},
+							{color: keys_color}],
+					yAxis: [{title: { style: {color: distance_color}}},
+							{title: { style: {color: clics_color}}},
+							{title: { style: {color: keys_color}}}
+					],
+				});
+			}
 			function draw_graph(atitle, asubtitle, days, distance, clics, keys){
-				graph=jQuery('#container').highcharts({
+				chart = Highcharts.chart('container', {
 					chart: {
 						type: 'column'
 					},
@@ -106,7 +117,6 @@
 		<div id="container" style="min-width: 850px; min-height: 550px;"></div>
 		<script type="text/javascript">
 			jQuery(document).ready(function() {
-				<!--
 				atitle='title';
 				asubtitle='subtitle';
 				days = ['2019-12-26', '2019-12-27', '2019-12-28']
@@ -114,7 +124,6 @@
 				clics=[30, 35, 40];
 				keys=[120, 150, 140];
 				draw_graph(atitle,asubtitle,days,distance,clics,keys);
-				//-->
 				send('{"status":"ready"}');
 			});
 		</script>

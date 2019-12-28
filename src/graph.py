@@ -34,6 +34,7 @@ from gi.repository import Gtk
 from gi.repository import WebKit2
 import config
 from basedialog import BaseDialog
+from configurator import Configuration
 
 
 class Graph(BaseDialog):
@@ -67,11 +68,19 @@ class Graph(BaseDialog):
         self.web_send('title="{}";subtitle="{}";days={};distance={};\
             clics={};keys={};draw_graph(title,subtitle,days,distance,\
                 clics, keys);'.format(self.title, self.subtitle, self.days,
-                                     self.distance, self.clics, self.keys))
+                                      self.distance, self.clics, self.keys))
 
     def load_changed(self, widget, load_event):
         if load_event == WebKit2.LoadEvent.FINISHED:
             self.update()
+            configuration = Configuration()
+            preferences = configuration.get('preferences')
+            distance_color = preferences['distance-color']
+            clics_color = preferences['clics-color']
+            keys_color = preferences['keys-color']
+            self.web_send('set_colors("{}", "{}", "{}");'.format(
+                distance_color, clics_color, keys_color
+            ))
             while Gtk.events_pending():
                 Gtk.main_iteration()
 

@@ -1,4 +1,11 @@
-habits (0.1.1-0extras19.10.4) eoan; urgency=medium
+habits (0.1.2-0extras19.10.0) eoan; urgency=medium
+
+  * Update Highcharts to version 8.0
+  * Add colors preferences to chart
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 28 Dec 2019 21:38:21 +0100
+
+habits (0.1.1-0extras19.10.5) eoan; urgency=medium
 
   * Add translation to Spanish
   * Change directory
@@ -6,7 +13,7 @@ habits (0.1.1-0extras19.10.4) eoan; urgency=medium
   * Remove limit for number of clics
   * Changed color for distance, clics and keys
 
- -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 28 Dec 2019 07:41:17 +0100
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 28 Dec 2019 09:36:44 +0100
 
 habits (0.1.0-0extras19.10.11) eoan; urgency=medium
 

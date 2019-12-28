@@ -30,7 +30,10 @@ import gettext
 
 PARAMS = {'stats': {},
           'preferences': {'theme-light': True,
-                          'start-actived': True}
+                          'start-actived': True,
+                          'distance-color': '#445c3c',
+                          'clics-color': '#bd574e',
+                          'keys-color': '#142d4c'}
           }
 
 CONFIG_DIR = os.path.join(os.path.expanduser('~'), '.config/habits')
@@ -61,7 +64,8 @@ else:
     CHANGELOG = os.path.join(DEBIANDIR, 'changelog')
     ICONDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/icons/'))
     HTML_GRAPH = os.path.join(ROOTDIR, 'graph', 'graph.html')
-    AUTOSTARTDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/autostart/'))
+    AUTOSTARTDIR = os.path.normpath(
+        os.path.join(ROOTDIR, '../data/autostart/'))
 AUTOSTART = os.path.join(AUTOSTARTDIR, 'habits-autostart.desktop')
 ICON = os.path.join(ICONDIR, 'habits.svg')
 ICON_ACTIVED_LIGHT = os.path.join(ICONDIR, 'habits-active.svg')

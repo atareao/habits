@@ -26,16 +26,25 @@
 import gi
 try:
     gi.require_version('Gtk', '3.0')
+    gi.require_version('Gdk', '3.0')
 except ValueError as e:
     print(e)
     exit(1)
 from gi.repository import Gtk
+from gi.repository import Gdk
 import os
 import config
 import shutil
 from config import _
 from configurator import Configuration
 from basedialog import BaseDialog
+
+
+def convert_rgb2hex(color):
+    red = int(color.red * 255)
+    green = int(color.green * 255)
+    blue = int(color.blue * 255)
+    return '#%02x%02x%02x' % (red, green, blue)
 
 
 class Preferences(BaseDialog):
@@ -55,12 +64,36 @@ class Preferences(BaseDialog):
         self.grid.attach(Gtk.Label.new(_('Autostart:')), 0, 2, 1, 1)
         self.autostart = Gtk.Switch.new()
         self.grid.attach(self.autostart, 1, 2, 1, 1)
+        self.grid.attach(Gtk.Label.new(_('Colors')), 0, 3, 2, 1)
+        self.grid.attach(Gtk.Label.new(_('Distance')), 0, 4, 1, 1)
+        color = Gdk.RGBA()
+        color.parse('#445c3c')
+        self.distance_color = Gtk.ColorButton()
+        self.grid.attach(self.distance_color, 1, 4, 1, 1)
+        self.grid.attach(Gtk.Label.new(_('Clics')), 0, 5, 1, 1)
+        color.parse('#445c3c')
+        self.clics_color = Gtk.ColorButton.new_with_rgba(color)
+        self.grid.attach(self.clics_color, 1, 5, 1, 1)
+        self.grid.attach(Gtk.Label.new(_('Keys')), 0, 6, 1, 1)
+        color.parse('#445c3c')
+        self.keys_color = Gtk.ColorButton()
+        self.keys_color.set_rgba(color)
+        self.grid.attach(self.keys_color, 1, 6, 1, 1)
 
     def load(self):
         configuration = Configuration()
         preferences = configuration.get('preferences')
         self.theme_light.set_active(preferences['theme-light'])
         self.start_actived.set_active(preferences['start-actived'])
+
+        color = Gdk.RGBA()
+        color.parse(preferences['distance-color'])
+        self.distance_color.set_rgba(color)
+        color.parse(preferences['clics-color'])
+        self.clics_color.set_rgba(color)
+        color.parse(preferences['keys-color'])
+        self.keys_color.set_rgba(color)
+
         autostart_file = 'habits-autostart.desktop'
         if os.path.exists(os.path.join(
                 os.getenv('HOME'), '.config/autostart', autostart_file)):
@@ -73,6 +106,14 @@ class Preferences(BaseDialog):
         preferences = configuration.get('preferences')
         preferences['theme-light'] = self.theme_light.get_active()
         preferences['start-actived'] = self.start_actived.get_active()
+
+        preferences['distance-color'] = convert_rgb2hex(
+            self.distance_color.get_rgba())
+        preferences['clics-color'] = convert_rgb2hex(
+            self.clics_color.get_rgba())
+        preferences['keys-color'] = convert_rgb2hex(
+            self.keys_color.get_rgba())
+
         configuration.set('preferences', preferences)
         configuration.save()
         autostart_file = 'habits-autostart.desktop'
