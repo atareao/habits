@@ -1,10 +1,12 @@
-habits (0.1.1-0extras19.10.3) eoan; urgency=medium
+habits (0.1.1-0extras19.10.4) eoan; urgency=medium
 
   * Add translation to Spanish
   * Change directory
   * Fix minor bugs
+  * Remove limit for number of clics
+  * Changed color for distance, clics and keys
 
- -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Fri, 27 Dec 2019 21:03:40 +0100
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 28 Dec 2019 07:41:17 +0100
 
 habits (0.1.0-0extras19.10.11) eoan; urgency=medium
 
