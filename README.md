@@ -11,7 +11,7 @@ mouse or how many keystrokes.
 
 [![Habits](./data/icons/habits.svg)](https://www.atareao.es/aplicacion/habits/)
 
-## 🏠 [Homepage](https://www.atareao.es/applicacion/habits)
+## 🏠 [Homepage](https://www.atareao.es/aplicacion/habits/)
 
 ## Prerequisites
 
