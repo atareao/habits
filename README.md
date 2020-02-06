@@ -43,22 +43,28 @@ sudo apt install habits
 
 ## Using Habits
 
-To use **Habits**, open Habits, and configure it,
+When you start **Habits** it goes to Indicator Area, as you can see in the next screenshot,
 
-![start Habits](./screenshots/image01.png)
+![Habits](./screenshots/habits_01.png)
 
-If you select bluetooth then,
+You can set some options in order to start *Habits* when you start your Operative System.
 
-![bluetooth](./screenshots/image02.png)
+* Set the icon theme. Dark or light.
+* Start Habits with your Operative System
 
-To add a new device click on `add device` in the menu,
+Besides you can set the colors of the graphics
 
-![add device](./screenshots/image03.png)
+![Configuration](./screenshots/habits_02.png)
 
-Then select the device you want to use to unlock Ubuntu, Linux Mint, etc.
+In the next screenshot you can see the about
 
-![select device](./screenshots/image04.png)
+![About](./screenshots/habits_03.png)
 
+In the next screenshots you can see some samples of my use of *Habits*,
+
+![Example 1](./screenshots/habits_04.png)
+
+![Example 2](./screenshots/habits_05.png)
 
 ## Contributing to Habits
 
