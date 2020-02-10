@@ -6,6 +6,7 @@
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript">
 			var chart;
+			var units = 'meters';
 			function set_colors(distance_color, clics_color, keys_color){
 				chart.update({
 					series:[{color: distance_color},
@@ -14,6 +15,19 @@
 					yAxis: [{title: { style: {color: distance_color}}},
 							{title: { style: {color: clics_color}}},
 							{title: { style: {color: keys_color}}}
+					],
+				});
+			}
+			function set_units(units){
+				let title_units = 'Distance (m)';
+				if(units == 'feets'){
+					title_units = 'Distance (f)';
+					units = 'feet';
+				}
+				chart.update({
+					yAxis: [{title: { text: title_units}},
+							{title: { text: 'Clicks (ud)'}},
+							{title: { text: 'Keys (ud)'}}
 					],
 				});
 			}
@@ -76,7 +90,7 @@
 							radius: 4
 						},
 						tooltip: {
-							valueSuffix: ' m'
+							valueSuffix: ((units == 'feet') ? ' f': ' m')
 						}
 					},{
 						name: 'Clicks',

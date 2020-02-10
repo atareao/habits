@@ -1,3 +1,11 @@
+habits (0.1.3-0extras19.10.0) eoan; urgency=medium
+
+  * Fix a minor typo
+  * Add Ducth translation
+  * Add units to feet and meters
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Mon, 10 Feb 2020 21:08:03 +0100
+
 habits (0.1.2-0extras19.10.0) eoan; urgency=medium
 
   * Update Highcharts to version 8.0

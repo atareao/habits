@@ -33,7 +33,8 @@ PARAMS = {'stats': {},
                           'start-actived': True,
                           'distance-color': '#445c3c',
                           'clics-color': '#bd574e',
-                          'keys-color': '#142d4c'}
+                          'keys-color': '#142d4c',
+                          'units': 'meters'}
           }
 
 CONFIG_DIR = os.path.join(os.path.expanduser('~'), '.config/habits')

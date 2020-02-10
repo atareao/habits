@@ -65,10 +65,20 @@ class Graph(BaseDialog):
         self.set_focus(self.viewer)
 
     def update(self):
+        configuration = Configuration()
+        preferences = configuration.get('preferences')
+        units = preferences['units']
+        distance = []
+        if units == 'feets':
+            for i in self.distance:
+                distance.append(i/3.28084)
+        else:
+            distance = self.distance
+
         self.web_send('title="{}";subtitle="{}";days={};distance={};\
             clics={};keys={};draw_graph(title,subtitle,days,distance,\
                 clics, keys);'.format(self.title, self.subtitle, self.days,
-                                      self.distance, self.clics, self.keys))
+                                      distance, self.clics, self.keys))
 
     def load_changed(self, widget, load_event):
         if load_event == WebKit2.LoadEvent.FINISHED:
@@ -78,9 +88,11 @@ class Graph(BaseDialog):
             distance_color = preferences['distance-color']
             clics_color = preferences['clics-color']
             keys_color = preferences['keys-color']
+            units = preferences['units']
             self.web_send('set_colors("{}", "{}", "{}");'.format(
                 distance_color, clics_color, keys_color
             ))
+            self.web_send('set_units("{}");'.format(units))
             while Gtk.events_pending():
                 Gtk.main_iteration()
 
