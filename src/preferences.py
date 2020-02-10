@@ -70,7 +70,7 @@ class Preferences(BaseDialog):
         color.parse('#445c3c')
         self.distance_color = Gtk.ColorButton()
         self.grid.attach(self.distance_color, 1, 4, 1, 1)
-        self.grid.attach(Gtk.Label.new(_('Clics')), 0, 5, 1, 1)
+        self.grid.attach(Gtk.Label.new(_('Clicks')), 0, 5, 1, 1)
         color.parse('#445c3c')
         self.clics_color = Gtk.ColorButton.new_with_rgba(color)
         self.grid.attach(self.clics_color, 1, 5, 1, 1)
