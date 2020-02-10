@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-27 09:58+0100\n"
+"PO-Revision-Date: 2020-02-10 18:16+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#: src/preferences.py:43 src/indicator.py:104
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: src/preferences.py:49
+msgid "Theme light:"
+msgstr "Licht thema:"
+
+#: src/preferences.py:52
+msgid "Start actived:"
+msgstr "Automatisch bijhouden:"
+
+#: src/preferences.py:55
+msgid "Autostart:"
+msgstr "Automatisch opstarten:"
+
+#: src/indicator.py:91 src/indicator.py:272
+msgid "Start monitor"
+msgstr "Bijhouden"
+
+#: src/indicator.py:98
+msgid "Statistics"
+msgstr "Statistieken"
+
+#: src/indicator.py:108
+msgid "Help"
+msgstr "Hulp"
+
+#: src/indicator.py:114
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: src/indicator.py:133 src/indicator.py:223
+msgid "Habits"
+msgstr "Gedrag"
+
+#: src/indicator.py:134
+msgid "Mouse and keyboard"
+msgstr "Muis en toetsenbord"
+
+#: src/indicator.py:163
+msgid "Homepage"
+msgstr "Website"
+
+#: src/indicator.py:169
+msgid "Get help online..."
+msgstr "Online-hulp..."
+
+#: src/indicator.py:176
+msgid "Translate this application..."
+msgstr "Vertaal deze toepassing..."
+
+#: src/indicator.py:182
+msgid "Report a bug..."
+msgstr "Meld een bug..."
+
+#: src/indicator.py:191
+msgid "Found me in Twitter"
+msgstr "Volg me op Twitter"
+
+#: src/indicator.py:197
+msgid "Found me in GitHub"
+msgstr "Volg me op GitHub"
+
+#: src/indicator.py:203
+msgid "Found me in Mastodon"
+msgstr "Volg me op Mastodon"
+
+#: src/indicator.py:209
+msgid "About"
+msgstr "Over"
+
+#: src/indicator.py:281
+msgid "Stop monitor"
+msgstr "Stoppen met bijhouden"
