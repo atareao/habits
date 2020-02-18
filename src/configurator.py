@@ -45,7 +45,7 @@ class Configuration(object):
             os.chmod(CONFIG_FILE, 0o600)
 
     def has(self, key):
-        return key in self.params.keys()
+        return key in self.params
 
     def get(self, key):
         try:
@@ -91,6 +91,6 @@ class Configuration(object):
 
     def __str__(self):
         ans = ''
-        for key in sorted(self.params.keys()):
+        for key in sorted(self.params):
             ans += '{0}: {1}\n'.format(key, self.params[key])
         return ans
