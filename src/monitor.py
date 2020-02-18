@@ -55,7 +55,7 @@ class Monitor(Thread):
         day = time.strftime('%Y-%m-%d', time.localtime())
         configuration = Configuration()
         stats = configuration.get('stats')
-        if day in stats.keys():
+        if day in stats:
             self.data[day] = stats[day]
 
         # Check if the extension is present
@@ -95,7 +95,7 @@ class Monitor(Thread):
     def save(self):
         configuration = Configuration()
         stats = configuration.get('stats')
-        for day in self.data.keys():
+        for day in self.data:
             stats[day] = self.data[day]
         configuration.set('stats', stats)
         configuration.save()
@@ -141,21 +141,21 @@ class Monitor(Thread):
 
     def set_data(self, key, value):
         day = time.strftime('%Y-%m-%d', time.localtime())
-        if day not in self.data.keys():
+        if day not in self.data:
             self.data.keys = {}
         self.data[day][key] = value
 
     def inc_data(self, key, value):
         day = time.strftime('%Y-%m-%d', time.localtime())
-        if day not in self.data.keys():
+        if day not in self.data:
             self.data[day] = {}
-        if key not in self.data[day].keys():
+        if key not in self.data[day]:
             self.data[day][key] = 0
         self.data[day][key] += value
 
     def get_data(self, key):
         day = time.strftime('%Y-%m-%d', time.localtime())
-        if day in self.data.keys():
+        if day in self.data:
             if key in self.data[day].keys:
                 return self.data[day][key]
         return 0
