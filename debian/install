@@ -6,4 +6,14 @@ src/graph /opt/extras.ubuntu.com/habits/share/habits
 data/icons /opt/extras.ubuntu.com/habits/share
 data/autostart /opt/extras.ubuntu.com/habits/share
 data/habits.desktop /usr/share/applications
-data/icons/habits.svg /usr/share/icons/hicolor/scalable/apps
+data/icon/scalable/*.svg /usr/share/icons/hicolor/scalable/apps
+data/icon/8x8/*.png /usr/share/icons/hicolor/8x8/apps
+data/icon/16x16/*.png /usr/share/icons/hicolor/16x16/apps
+data/icon/32x32/*.png /usr/share/icons/hicolor/32x32/apps
+data/icon/48x48/*.png /usr/share/icons/hicolor/48x48/apps
+data/icon/96x96/*.png /usr/share/icons/hicolor/96x96/apps
+data/icon/128x128/*.png /usr/share/icons/hicolor/128x128/apps
+data/icon/192x192/*.png /usr/share/icons/hicolor/192x192/apps
+data/icon/256x256/*.png /usr/share/icons/hicolor/256x256/apps
+data/icon/512x512/*.png /usr/share/icons/hicolor/512x512/apps
+data/icon/1024x1024/*.png /usr/share/icons/hicolor/1024x1024/apps
