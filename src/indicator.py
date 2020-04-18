@@ -144,15 +144,15 @@ class Indicator(object):
         keys = []
         for day in stats:
             days.append(day)
-            if 'distance' in stats[day].keys():
+            if 'distance' in stats[day]:
                 distance.append(stats[day]['distance']/1000.0)
             else:
                 distance.append(0)
-            if 'clics' in stats[day].keys():
+            if 'clics' in stats[day]:
                 clics.append(stats[day]['clics'])
             else:
                 clics.append(0)
-            if 'keys' in stats[day].keys():
+            if 'keys' in stats[day]:
                 keys.append(stats[day]['keys'])
             else:
                 keys.append(0)
