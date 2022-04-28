@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# ALBANO BATTISTELLA <albano_battistella@hotmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-27 09:58+0100\n"
+"PO-Revision-Date: 2020-05-08 21:44+0100\n"
+"Last-Translator: Albano Battistella <albano_battistella@hotmail.com>\n"
+"Language-Team: ITALIAN <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/preferences.py:43 src/indicator.py:104
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: src/preferences.py:49
+msgid "Theme light:"
+msgstr "Tema chiaro:"
+
+#: src/preferences.py:52
+msgid "Start actived:"
+msgstr "Inizia attivato:"
+
+#: src/preferences.py:55
+msgid "Autostart:"
+msgstr "Avvio automatico:"
+
+#: src/indicator.py:91 src/indicator.py:272
+msgid "Start monitor"
+msgstr "Inizia il monitoraggio"
+
+#: src/indicator.py:98
+msgid "Statistics"
+msgstr "Statistiche"
+
+#: src/indicator.py:108
+msgid "Help"
+msgstr "Aiuto"
+
+#: src/indicator.py:114
+msgid "Quit"
+msgstr "Esci"
+
+#: src/indicator.py:133 src/indicator.py:223
+msgid "Habits"
+msgstr "Habits"
+
+#: src/indicator.py:134
+msgid "Mouse and keyboard"
+msgstr "Mouse e tastiera"
+
+#: src/indicator.py:163
+msgid "Homepage"
+msgstr "Homepage"
+
+#: src/indicator.py:169
+msgid "Get help online..."
+msgstr "Chiedi aiuto online..."
+
+#: src/indicator.py:176
+msgid "Translate this application..."
+msgstr "Traduci questa applicazione ..."
+
+#: src/indicator.py:182
+msgid "Report a bug..."
+msgstr "Segnala un bug..."
+
+#: src/indicator.py:191
+msgid "Found me in Twitter"
+msgstr "Trovami su Twitter"
+
+#: src/indicator.py:197
+msgid "Found me in GitHub"
+msgstr "Trovami su GitHub"
+
+#: src/indicator.py:203
+msgid "Found me in Mastodon"
+msgstr "Trovami su Mastodon"
+
+#: src/indicator.py:209
+msgid "About"
+msgstr "Informazioni"
+
+#: src/indicator.py:281
+msgid "Stop monitor"
+msgstr "Termina il monitoraggio"
